@@ -1,26 +1,39 @@
+import React from "react";
+import GreenLight from './images/green-light.png';
+import YellowLight from './images/yellow-light.png';
+import RedLight from './images/red-light.png';
+import MyVideo from './images/Crosswalk 9 sec.mp4';
+import MyAudio from './images/jazzy.mp3';
 
-<div>
-			<div className="lightShow">
-				<div id="redOne" className="redOne">
-                    <img src = "https://github.com/trentonjknight/reacttrafficlight/blob/33a2fe431e76620e2ade5ef798ec9175bbf1fa7e/images/red-light.png"></img>
+
+export function MyCrossWalk(){
+    return(
+
+        <div className="lightShow">
+            <div id="redOne" className="redOne">
+                <img src={GreenLight} width="100%" ></img>
             </div>
+
+            <div id="yellowOne" className="yellowOne">
+                <img src={YellowLight} width="100%"></img>
             </div>
-                <div id="yellowOne" className="yellowOne">
-                    <img src = "https://github.com/trentonjknight/reacttrafficlight/blob/33a2fe431e76620e2ade5ef798ec9175bbf1fa7e/images/yellow-light.png"></img>
+
+            <div id="greenOne" className="greenOne">
+                <img src={RedLight} width="100%" ></img>
             </div>
-				<div id="greenOne" className="greenOne">
-                    <img src = "https://github.com/trentonjknight/reacttrafficlight/blob/33a2fe431e76620e2ade5ef798ec9175bbf1fa7e/images/green-light.png"></img>
-            </div>
+
             <div>
-                    <video width="1920px" height="1080px" controls>
-                    <source src="https://github.com/trentonjknight/reacttrafficlight/blob/33a2fe431e76620e2ade5ef798ec9175bbf1fa7e/images/City%20-%206383.mp4"
+                <video width="100%" controls>
+                    <source src={MyVideo}
                     type="video/mp4"></source>
-                    </video>
+                </video>
             </div>
-
-
-</div>
-
+            <audio controls>
+                    <source src={MyAudio}/>
+            </audio>
+        </div>
+    );
+}
 
 
             {/* <div className="pole"></div> */}
