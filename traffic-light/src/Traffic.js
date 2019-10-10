@@ -13,9 +13,11 @@ function TrafficLight() {
 			<div id="walkLight" className="walkLite">
 				<div id="walk" className="walk"></div>
 				<div id="doNotWalk" className="doNotWalk"></div>
+            <div className="pole2"></div>
 			</div>
 
-			<div id="controls" className="configBoxx">
+
+			<div id="controls" className="settings">
 				<div id="walk" className="walk" />
 				<div id="doNotWalk" className="doNotWalk" />
 			</div>
