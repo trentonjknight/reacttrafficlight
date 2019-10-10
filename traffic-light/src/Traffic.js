@@ -11,16 +11,20 @@ function TrafficLight() {
             <div className="pole"></div>
 
 			<div id="walkLight" className="walkLite">
-				<div id="walk" className="walk"></div>
-				<div id="doNotWalk" className="doNotWalk"></div>
+				<div id="walk" className="walk">WALK</div>
+                <br></br>
+				<div id="doNotWalk" className="doNotWalk">DONT WALK</div>
             <div className="pole2"></div>
 			</div>
 
-
 			<div id="controls" className="settings">
-				<div id="walk" className="walk" />
-				<div id="doNotWalk" className="doNotWalk" />
+				<div id="on">ON</div>
+                <br></br>
+				<div id="off" >OFF</div>
+                <br></br>
+                <div id="auto">AUTO</div>
 			</div>
+
 		</div>
 	);
 }
