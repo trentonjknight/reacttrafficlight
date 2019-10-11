@@ -63,6 +63,12 @@ function TrafficLight() {
                     <div className={mils} onClick={() => {setMils('auto')}}>Auto</div>
                 </div>
 	        </div>
+
+
+
+
+
+
         </div>
 	);
 }
