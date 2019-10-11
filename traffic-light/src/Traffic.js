@@ -5,6 +5,7 @@ function TrafficLight() {
     const [red, setRed] = useState('red1 lightOff')
     const [yellow,setYellow] = useState('yellow1 lightOff')
     const [green, setGreen] = useState('green1 lightOff')
+
     const [mils,setMils] = useState(0);
 
     useEffect(() => {
@@ -13,7 +14,7 @@ function TrafficLight() {
 
 
 	return (
-		<div>
+		<div id='content'>
 			<div className="light">
 				<div id="red" className={red}
                     onClick={() => {
@@ -46,28 +47,23 @@ function TrafficLight() {
                 <div className="walkLight">
                     <div className={red.includes('On') ? 'man' : 'walkMan man'}>
                         <img class="man" src="https://image.flaticon.com/icons/png/512/8/8818.png"></img>
-
                     <div className={green.includes('On') ? 'hand man' : 'doNotWalk'}>
-
                         <img class="hand" src="https://cdn2.iconfinder.com/data/icons/toolbar-signs-2/512/stop_hand_play_pause-512.png"></img>
                     </div>
-                </div>
+                    </div>
+                    <div className="pole2"></div>
 
-                <div className="pole2"></div>
-
+		        </div>
                 <div className="settings">
 
                     <button id="on">ON</button>
-                    <br></br>
-                    <button id="off" >OFF</button>
-                    <br></br>
-                    <div className={mils} onClick={() => {setMils('auto')}}>Auto
-                    </div>
 
+                    <button id="off">OFF</button>
+
+                    <div className={mils} onClick={() => {setMils('auto')}}>Auto</div>
                 </div>
-		</div>
-	</div>
-</div>
+	        </div>
+        </div>
 	);
 }
 
