@@ -1,4 +1,3 @@
-import React from "react";
 import React, { useState, useEffect } from "react";
 import GreenLight from './images/green2.png';
 import YellowLight from './images/yellow2.png';
@@ -11,7 +10,7 @@ function CohesiveLights(){
     const red = require({RedLight})
     const yellow = require({YellowLight})
     const green = require({GreenLight})
-    const shirts = { white, black }
+    // const shirts = { white, black }
 
 
   }

@@ -50,9 +50,10 @@ body{
     border-top: 5px solid black;
     border-bottom: 5px solid black;
     height:10px;
-    width: 600px;
+    width: 500px;
     background-color: gray;
-    margin-left:125px;
+    margin-left:0px;
+    margin-bottom: 30px;
 }
 
 .settings{
@@ -63,8 +64,8 @@ body{
     border: 5px solid black;
     text-align: center;
     color:white;
-    margin-left: 595px;
-
+    /* position: relative; */
+    top: -75px;
 }
 .lightOn{
     opacity: 1;
@@ -74,11 +75,14 @@ body{
 }
 
 .walkMan{
-background-color: white;
+    background-color: white;
+    /* height:50px;
+    width:50px;
+    margin:auto; */
 }
 
 .doNotWalk{
-background-color: red;
+    background-color: red;
 }
 
 .man{
@@ -92,9 +96,7 @@ background-color: red;
     margin:auto;
 }
 #on{
-    margin-bottom: 10px;
-    margin-top:20px;
-    display: inline-block;
+    display: inline-flex;
 }
      /* ryan's media css */
 
@@ -117,3 +119,14 @@ background-color: red;
     min-width: 90%;
 }
 
+.onbutton{
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+.offbutton{
+    margin-bottom: 5px;
+}
+.horizontal{
+    width:800px;
+    height:145px;
+}
