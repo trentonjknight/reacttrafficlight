@@ -52,6 +52,7 @@ body{
     height:10px;
     width: 700px;
     background-color: gray;
+    margin-left:125px;
 }
 
 .settings{
@@ -63,7 +64,7 @@ body{
     text-align: center;
     color:white;
     padding:5px;
-
+    margin-left: 700px;
 }
 .lightOn{
     opacity: 1;
