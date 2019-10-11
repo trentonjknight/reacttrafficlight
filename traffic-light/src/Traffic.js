@@ -5,6 +5,7 @@ function TrafficLight() {
     const [red, setRed] = useState('red1 lightOff')
     const [yellow,setYellow] = useState('yellow1 lightOff')
     const [green, setGreen] = useState('green1 lightOff')
+    const [off,setOff] = useState(0)
 
     const [mils,setMils] = useState(0);
 
@@ -58,9 +59,13 @@ function TrafficLight() {
 
                     <button id="on">ON</button>
 
-                    <button id="off">OFF</button>
+                    <button id="off" className={off}
+                    onClick={()=>{
+                        setOff()
+                    }}
+                    >OFF</button>
 
-                    <div className={mils} onClick={() => {setMils('auto')}}>Auto</div>
+                    <button className={mils} onClick={() => {setMils('auto')}}>Auto</button>
                 </div>
 	        </div>
 
