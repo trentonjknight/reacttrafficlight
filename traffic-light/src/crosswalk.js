@@ -36,7 +36,7 @@ export function MyCrossWalk(){
             <div id="greenOne" className="stackD">
                 <img src={GreenLight} width="100% d-none" ></img>
             </div>
-            <audio controls>
+            <audio controls autoPlay id="myAudio">
                     <source src={MyAudio}/>
             </audio>
         </div>
