@@ -6,17 +6,18 @@ import MyVideo from './images/Crosswalk 9 sec.mp4';
 import MyAudio from './images/jazzy.mp3';
 import TrafficLight from './Traffic.js'
 
-function CohesiveLights(){
-    const red = require({RedLight})
-    const yellow = require({YellowLight})
-    const green = require({GreenLight})
+//function CohesiveLights(){
+//    const red = require({RedLight})
+//    const yellow = require({YellowLight})
+//    const green = require({GreenLight})
     // const shirts = { white, black }
 
 
-  }
+  //}
 
 
-export function MyCrossWalk(){
+export function MyCrossWalk(props){
+
     return(
 
 <>
@@ -29,17 +30,10 @@ export function MyCrossWalk(){
                         <source src={MyAudio}/>
                 </audio>
             </div>
+
         <div className="lightShow">
             <div id="redOne" className="stackD">
-                <img src={RedLight} width="100% d-none" ></img>
-            </div>
-
-            <div id="yellowOne" className="stackD">
-                <img src={YellowLight} width="100% d-none"></img>
-            </div>
-
-            <div id="greenOne" className="stackD">
-                <img src={GreenLight} width="100% d-none" ></img>
+                <img src={props.light} width="100% " ></img>
             </div>
         </div>
 
