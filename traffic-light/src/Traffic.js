@@ -5,6 +5,7 @@ function TrafficLight() {
     const [red, setRed] = useState('red1 lightOff')
     const [yellow,setYellow] = useState('yellow1 lightOff')
     const [green, setGreen] = useState('green1 lightOff')
+
     const [mils,setMils] = useState(0);
 
     useEffect(() => {
@@ -50,18 +51,17 @@ function TrafficLight() {
                         <img class="hand" src="https://cdn2.iconfinder.com/data/icons/toolbar-signs-2/512/stop_hand_play_pause-512.png"></img>
                     </div>
                     </div>
-
-                <div className="pole2"></div>
+                    <div className="pole2"></div>
 
 		        </div>
-                    <div className="settings">
+                <div className="settings">
 
-                        <button id="on">ON</button>
+                    <button id="on">ON</button>
 
-                        <button id="off">OFF</button>
+                    <button id="off">OFF</button>
 
-                        <div className={mils} onClick={() => {setMils('auto')}}>Auto</div>
-                    </div>
+                    <div className={mils} onClick={() => {setMils('auto')}}>Auto</div>
+                </div>
 	        </div>
         </div>
 	);
