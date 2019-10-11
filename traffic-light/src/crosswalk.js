@@ -17,6 +17,13 @@ export function MyCrossWalk(){
 
     return(
 
+<>
+            <div>
+                <video loop id="myVideo" width="100%" controls>
+                    <source src={MyVideo}
+                    type="video/mp4"></source>
+                </video>
+            </div>
         <div className="lightShow">
             <div id="redOne" className="stackD">
                 <img src={RedLight} width="100% d-none" ></img>
@@ -29,17 +36,11 @@ export function MyCrossWalk(){
             <div id="greenOne" className="stackD">
                 <img src={GreenLight} width="100% d-none" ></img>
             </div>
-
-            <div>
-                <video width="100%" controls>
-                    <source src={MyVideo}
-                    type="video/mp4"></source>
-                </video>
-            </div>
             <audio controls>
                     <source src={MyAudio}/>
             </audio>
         </div>
+    </>
     );
 }
 

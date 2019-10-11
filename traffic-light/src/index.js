@@ -5,7 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import TrafficLight from './Traffic.js'
 import {MyCrossWalk} from './crosswalk'
 
-ReactDOM.render(<><TrafficLight /><MyCrossWalk/></>, document.getElementById('root'));
+ReactDOM.render(<><MyCrossWalk/><TrafficLight /></>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
