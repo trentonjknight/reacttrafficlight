@@ -1,25 +1,33 @@
 import React from "react";
-import GreenLight from './images/green-light.png';
-import YellowLight from './images/yellow-light.png';
-import RedLight from './images/red-light.png';
+import GreenLight from './images/green2.png';
+import YellowLight from './images/yellow2.png';
+import RedLight from './images/red2.png';
 import MyVideo from './images/Crosswalk 9 sec.mp4';
 import MyAudio from './images/jazzy.mp3';
 
 
 export function MyCrossWalk(){
+
+
+// let  currentLight;
+// if (state = redlight-on) {
+//     currentLight = RedLight
+// } else if
+
+
     return(
 
         <div className="lightShow">
-            <div id="redOne" className="redOne">
-                <img src={GreenLight} width="100%" ></img>
+            <div id="redOne" className="stackD">
+                <img src={currentLight} width="100% d-none" ></img>
             </div>
 
-            <div id="yellowOne" className="yellowOne">
-                <img src={YellowLight} width="100%"></img>
+            <div id="yellowOne" className="stackD">
+                <img src={YellowLight} width="100% d-none"></img>
             </div>
 
-            <div id="greenOne" className="greenOne">
-                <img src={RedLight} width="100%" ></img>
+            <div id="greenOne" className="stackD">
+                <img src={GreenLight} width="100% d-none" ></img>
             </div>
 
             <div>

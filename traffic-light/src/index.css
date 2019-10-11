@@ -1,5 +1,5 @@
 body{
-    background-color:cornflowerblue ;
+    background-color:rgb(238, 240, 243) ;
 }
 .light{
     border: 5px solid black;
@@ -98,3 +98,15 @@ background-color: red;
 #off{
     margin-bottom: 10px;
 }
+
+     /* ryan's media css */
+
+.stackD {
+   position: absolute;
+   Top: Left 657px;
+}
+
+/* .trentsDiv {
+    position: absolute;
+    Top: Right 800px;
+} */
