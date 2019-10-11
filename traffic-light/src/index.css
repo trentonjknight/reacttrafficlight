@@ -50,7 +50,7 @@ body{
     border-top: 5px solid black;
     border-bottom: 5px solid black;
     height:10px;
-    width: 700px;
+    width: 600px;
     background-color: gray;
     margin-left:125px;
 }
@@ -63,8 +63,8 @@ body{
     border: 5px solid black;
     text-align: center;
     color:white;
-    padding:5px;
-    margin-left: 700px;
+    margin-left: 595px;
+
 }
 .lightOn{
     opacity: 1;
