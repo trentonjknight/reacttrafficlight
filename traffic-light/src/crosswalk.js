@@ -1,20 +1,23 @@
 import React from "react";
+import React, { useState, useEffect } from "react";
 import GreenLight from './images/green2.png';
 import YellowLight from './images/yellow2.png';
 import RedLight from './images/red2.png';
 import MyVideo from './images/Crosswalk 9 sec.mp4';
 import MyAudio from './images/jazzy.mp3';
+import TrafficLight from './Traffic.js'
+
+function CohesiveLights(){
+    const red = require({RedLight})
+    const yellow = require({YellowLight})
+    const green = require({GreenLight})
+    const shirts = { white, black }
+
+
+  }
 
 
 export function MyCrossWalk(){
-
-
-// let  currentLight;
-// if (state = redlight-on) {
-//     currentLight = RedLight
-// } else if
-
-
     return(
 
 <>
@@ -23,6 +26,9 @@ export function MyCrossWalk(){
                     <source src={MyVideo}
                     type="video/mp4"></source>
                 </video>
+                <audio controls autoPlay id="myAudio">
+                        <source src={MyAudio}/>
+                </audio>
             </div>
         <div className="lightShow">
             <div id="redOne" className="stackD">
@@ -36,13 +42,13 @@ export function MyCrossWalk(){
             <div id="greenOne" className="stackD">
                 <img src={GreenLight} width="100% d-none" ></img>
             </div>
-            <audio controls autoPlay id="myAudio">
-                    <source src={MyAudio}/>
-            </audio>
         </div>
-    </>
+
+</>
+
     );
 }
+
 
 
             {/* <div className="pole"></div> */}
