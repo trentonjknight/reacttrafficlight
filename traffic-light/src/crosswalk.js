@@ -19,7 +19,7 @@ export function MyCrossWalk(){
 
         <div className="lightShow">
             <div id="redOne" className="stackD">
-                <img src={currentLight} width="100% d-none" ></img>
+                <img src={RedLight} width="100% d-none" ></img>
             </div>
 
             <div id="yellowOne" className="stackD">
