@@ -1,6 +1,6 @@
 import React from "react";
 import {useState, useEffect} from 'react';
-import {myCrossWalk, MyCrossWalk} from './crosswalk.js'
+import {MyCrossWalk} from './crosswalk.js'
 import GreenLight from './images/green2.png';
 import YellowLight from './images/yellow2.png';
 import RedLight from './images/red2.png';
@@ -15,10 +15,38 @@ function TrafficLight() {
     const [light, setLight] = useState('red')
 
     const [mils,setMils] = useState(0);
+    const [runTimer, setRunTimer] = useState(false)
 
     useEffect(() => {
-        setTimeout(()=> setMils(mils+1),5000)
-    },[mils])
+        if (runTimer) {
+            setTimeout(()=> setMils(mils+1),1000);
+            if (mils === 2) {
+                setRed('red1 lightOn')
+                setYellow('yellow1 lightOff')
+                setGreen('green1 lightOff')
+                setWalk('lightOff')
+                setDwalk('doNotWalk lightOn')
+                setLight(RedLight)
+            }
+            if (mils === 8){
+                setRed('red1 lightOff')
+                setYellow('yellow1 lightOn')
+                setGreen('green1 lightOff')
+                setWalk('lightOff')
+                setDwalk('doNotWalk lightOn')
+                setLight(YellowLight)
+            }
+            if (mils === 14){
+                setRed('red1 lightOff')
+                setYellow('yellow1 lightOff')
+                setGreen('green1 lightOn')
+                setWalk('lightOn')
+                setDwalk('doNotWalk lightOff')
+                setLight(GreenLight)
+            }
+            if (mils === 18) setMils(0);
+        }
+    },[mils, runTimer])
 
 
 	return (
@@ -29,32 +57,32 @@ function TrafficLight() {
                 <div className="light">
                     <div id="red" className={red}
                         onClick={() => {
-                        setRed('red1 lightOn')
-                        setYellow('yellow1 lightOff')
-                        setGreen('green1 lightOff')
-                        setDwalk('doNotWalk lightOn')
-                        setWalk('lightOff')
-                        setLight(RedLight)
+                            setRed('red1 lightOn')
+                            setYellow('yellow1 lightOff')
+                            setGreen('green1 lightOff')
+                            setDwalk('doNotWalk lightOn')
+                            setWalk('lightOff')
+                            setLight(RedLight)
                     }}>
                     </div>
 
                     <div id="yellow" className={yellow}
                         onClick={() => {
-                        setYellow('yellow1 lightOn')
-                        setRed('red1 lightOff')
-                        setGreen('green1 lightOff')
-                        setLight(YellowLight)
+                            setYellow('yellow1 lightOn')
+                            setRed('red1 lightOff')
+                            setGreen('green1 lightOff')
+                            setLight(YellowLight)
                     }}>
                     </div>
 
                     <div id="green" className={green}
                         onClick={() => {
-                        setGreen('green1 lightOn')
-                        setRed('red1 lightOff')
-                        setYellow('yellow1 lightOff')
-                        setDwalk('lightOff')
-                        setWalk('walkMan lightOn')
-                        setLight(GreenLight)
+                            setGreen('green1 lightOn')
+                            setRed('red1 lightOff')
+                            setYellow('yellow1 lightOff')
+                            setDwalk('lightOff')
+                            setWalk('walkMan lightOn')
+                            setLight(GreenLight)
                     }}>
                     </div>
                 </div>
@@ -90,7 +118,7 @@ function TrafficLight() {
                             }}>OFF</button>
                         </div>
                         <div className="autobutton">
-                            <button className={mils} onClick={() => {setMils()}}>Auto</button>
+                            <button onClick={()=>{setRunTimer(true)}}>AUTO</button>
                         </div>
 
                     </div>
@@ -101,8 +129,6 @@ function TrafficLight() {
 
 	);
 }
-
-
 
 export default TrafficLight;
 

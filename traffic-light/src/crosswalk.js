@@ -22,7 +22,7 @@ export function MyCrossWalk(props){
 
 <>
             <div>
-                <video loop id="myVideo" width="100%" controls>
+                <video loop autoPlay id="myVideo" width="100%" controls>
                     <source src={MyVideo}
                     type="video/mp4"></source>
                 </video>
