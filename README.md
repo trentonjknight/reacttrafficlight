@@ -1,24 +1,10 @@
-# ![4Geeks Logo](http://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=4geeks,16) HTML Hello
+Here we have created a functional traffic light using React, javascript, HTML and CSS. We implement the use of hooks to control the state of the lights and several other elements.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/html-hello.git)
+To visualize the traffic light and its controls in your browser, please follow these intructions. We recommend using Gitpod as the quickest method to try the functionality.
 
-The most basic boilerplate for any 4Geeks Academy Student using the [gitpod.io](gitpod.io) coding editor.
+$ cd traffic-light
+$ npm install      (only the first time)
+$ npm start
 
-## What to do next?
-
-Create a `index.html` file with the [basic HTML structure](http://content.breatheco.de/lesson/what-is-html-learn-html#page-structure) and see it live by running web-server using the following command:
-```sh
-$ pip3 install flask      (only the first time)
-$ python3 server.py
-```
-
-- You can create as many HTML files you want
-- You can also create CSS files and you can import them onto your website using a `<link>` tag placed between the `<head></head>` tags, like this:
-
-```html
-<head>
-  ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
+Here is a preview of the traffic light.
+![Screen Shot 2019-10-16 at 9 49 24 AM](https://user-images.githubusercontent.com/35662224/66925427-59dc8f00-effa-11e9-9c8a-568dcd1d5428.png)
